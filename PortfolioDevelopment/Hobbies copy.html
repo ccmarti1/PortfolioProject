@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<head>
+    <Title> Hobbies</Title>
+</head>
+<style>
+    .Parent
+    {
+        display: flex;
+    }
+    .Top
+    {
+        float: left;
+        border:2px solid black;
+        width: 50%;
+    }
+    /* this rule is to set the navigation bar */
+    /* this rule is to set the navigation bar */
+    ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: burlywood;
+    
+}
+    /*Defines elements to align to left*/
+li{
+    float:left;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    
+}
+/* this rule is to set the border in the navigation bar*/
+li :Last-child
+{
+    border-right: none;
+}
+/*to display the hover color as blue and text color as white*/
+li a:hover{
+    color: blanchedalmond;
+    background-color: blue;
+}
+/*Aligning the header 1 to center and setting the color to acqurine*/
+
+li a{
+    display: block;
+    text-align:center;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color:blue;
+}
+
+/*This sets variables for search bar in home page*/
+input[type=text]{
+    width: 300px;
+    box-sizing: border-box;
+    border:1px black;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color:teal;
+    background-image: url('C:\Users\yncee\OneDrive\Documents\WebsiteDevelopmentClass\OutsideClassProjects\SearchImage.jfif');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+
+}
+/* Creates box for top left of of screen for picture */
+#frame{
+    position: absolute; top: 100px; left: 80px; bottom: 0px;
+    width: 500px; height: 400px;
+    background-color: brown; color: darkblue;
+}
+/* Creates box for top right of of screen for description tex */
+#word{
+    position: absolute; top: 100px; Right: 80px; bottom: 0px;
+    width: 500px; height: 400px;
+    background-color: brown; color: darkblue;   
+}
+/* Creates box for bottom left of of screen for picture */
+#frame2{
+    position: absolute; top: 600px; left: 80px; bottom: 0px;
+    width: 500px; height: 400px;
+    background-color: brown; color: darkblue;
+}
+/* Creates box for bottom right of of screen for description text */
+#word2{
+    position: absolute; top: 600px; Right: 80px; bottom: 0px;
+    width: 500px; height: 400px;
+    background-color: brown; color: darkblue;
+
+/* Sets limitations on size of images */
+image{
+    width: 100px; height: 100px;
+}
+hr.solid{
+    border-color: solid blue;
+}
+div{
+    padding: 10px;
+    margin: 10px;
+    border: 3px;
+}
+p{
+    padding: 10px;
+    margin: 10px;
+    border: 3px;
+}
+</style>
+<body>
+    <div>
+        <form action="">
+            <input style="float: right;" type="text" name="search" placeholder="Search....">
+        </form>
+    <!-- Links for Navigation Bar -->
+        <ul>
+            <li>
+                <a class='active' href="C:\Users\yncee\OneDrive\Documents\WebsiteDevelopmentClass\OutsideClassProjects\ExpereincePage.html">Experience</a>
+            </li>
+            <li>
+                <a class='active' href="C:\Users\yncee\OneDrive\Documents\WebsiteDevelopmentClass\OutsideClassProjects\ProjectsPage.html">Projects</a>
+            </li>
+            <li>
+                <a class='active' href="C:\Users\yncee\OneDrive\Documents\WebsiteDevelopmentClass\OutsideClassProjects\Hobbies.html">Hobbies</a>
+            </li>
+            
+            <li>
+                <a class='active' href="C:\Users\yncee\OneDrive\Documents\WebsiteDevelopmentClass\OutsideClassProjects\COmmunityServicePage.html">Community services</a>
+            </li>
+            <li>
+                <a class='active' href="C:\Users\yncee\OneDrive\Documents\WebsiteDevelopmentClass\OutsideClassProjects\ContactPage.html">ContactPage</a>
+            </li>
+        </ul>
+    </div>
+
+
+        
+    </div>
+    <!-- Creates box for top left of of screen for picture -->
+    <div id="frame">
+        <div>
+         <h2>Drones</h2>
+            <img src="C:\Programs\Classes2021\WebsiteDevelopmentClass\PortfolioDevelopment\Images\Drone.jfif" alt="Drone">
+         </div>
+
+    </div> 
+<!-- Creates box for top right of screen for description -->
+        <div id="word">
+            <h3>Description of Hobbie</h3>
+                  <p>
+                   this is th etume ti attack
+                  </p>
+        </div>
+
+        <hr class=solid>
+<!-- Creates box for bottom left of of screen for picture -->
+        <div id="frame2">
+            <div>
+             <h2>Drones</h2>
+                <img src="C:\Users\yncee\OneDrive\Documents\WebsiteDevelopmentClass\GitHub\assignment_3-website-by-linking-all-your-web-pages-ccmarti1\OutsideClassProjects\Drone.jfif" alt="Drone">
+             </div>
+    
+        </div> 
+<!-- Creates box for bottom right of screen for description -->
+            <div id="word2">
+                <h3>Description of Hobbie</h3>
+                      <p>
+                       this is th etume ti attack
+                      </p>
+            </div>
+    
+
+
+    
+   
+</body>
