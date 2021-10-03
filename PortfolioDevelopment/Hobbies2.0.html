@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Hobbies Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Sets font style for body */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header{
+            /* padding */
+            padding: 40px; 
+            /* Centers the text */
+            text-align: center;
+            /* blue background */
+            background: darkblue;
+            /* color of text is black */
+            color: black;
+        }
+        .header h1{
+            font-size: 40px;
+        }
+        .navbar{
+            /* hides overflow */
+            overflow: hidden; 
+            /* sets background color of navigation bar to grey */
+            background-color:gray;
+        }
+        .navbar a{
+            /* pushes links to left and are side by side */
+            float: left;
+            /* puts into a block style */
+            display: block;
+            /* Text is color black */
+            color: black;
+            /* Texts are centered */
+            text-align: center;
+            /* Padding is set for boxes */
+            padding: 14px 20px;
+            /* this removes underline of links text */
+            text-decoration: none;
+        }
+        .navbar a.right{
+            /* pushes link to right sid eof navigationbar */
+            float: right;
+        }
+        .navbar a:hover{
+            /* Makes background color white when mouse hovers over nav link */
+            background-color:white ;
+            /* Text color becomes green */
+            color: green;
+
+        }
+        /* Gives proper sizing */
+        *{
+            box-sizing: border-box;
+        }
+        /* Column Container */
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Create two equal columns that sit side by side */
+        /* PictureSide that contains images of hobbbie */
+        .LeftSide{
+            flex: 50%;
+            /* Sets width of left side to 5o % */
+            background-color:white;
+            /* White background color is set */
+            padding: 20px;
+            /* padding to give space in between borders of picture side */ 
+        }
+        .RightSide{
+            flex: 50%;
+            /* Sets width of right side to 5o % */
+            background-color:white;
+            /* White background color is set */
+            padding: 20px;
+            /* padding to give space in between borders of description side */ 
+        }
+        .RightSide h2{
+            text-decoration: underline;
+        }
+        .RightSide p{
+            font-size: 30px;
+        }
+        Image{
+            padding: 20px;
+        }
+        .Description{
+            padding: 30px 30px;
+        }
+        .Picture{
+            padding: 20px 30px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- header of page -->
+    <div class="header">
+        <h1>Portfolio-Hobbies</h1>
+    </div>
+<!-- navigation bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#"> Resume</a>
+        <a href="#">Projects</a>
+        <a href="#">Athletics</a>
+        <a href="#">Hobbies</a>
+        <a href="#">CommunityService</a>
+      
+        <a href="#" class="right">Contact</a>
+
+    </div>
+    <div class="row">
+        <div class="LeftSide">
+            <div class="Picture">
+                <h1>Drones</h1>
+                <div class="Image">
+                    <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\Drone.jfif" alt="Drone">
+                </div>
+             </div>
+
+             <div class="Picture">
+                <h1>Drones</h1>
+                <div class="Image">
+                    <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\Drone.jfif" alt="Drone">
+                </div>
+             </div>
+
+             <div class="Picture">
+                <h1>Drones</h1>
+                <div class="Image">
+                    <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\Drone.jfif" alt="Drone">
+                </div>
+             </div>
+
+
+        </div>
+        <div class="RightSide">
+            <div class="Description">
+                <h2>Description:</h2>
+                <p>The choice was red, green, or blue. It didn't seem like an important 
+                    choice when he was making it, but it was a choice nonetheless. Had he 
+                    known the consequences at that time, he would likely have considered 
+                    the choice a bit longer. In the end, he didn't and ended up choosing blue.
+                </p>
+
+            </div>
+
+            <div class="Description">
+                <h2>Description:</h2>
+                <p>The choice was red, green, or blue. It didn't seem like an important 
+                    choice when he was making it, but it was a choice nonetheless. Had he 
+                    known the consequences at that time, he would likely have considered 
+                    the choice a bit longer. In the end, he didn't and ended up choosing blue.
+                </p>
+
+            </div>
+
+            <div class="Description">
+                <h2>Description:</h2>
+                <p>The choice was red, green, or blue. It didn't seem like an important 
+                    choice when he was making it, but it was a choice nonetheless. Had he 
+                    known the consequences at that time, he would likely have considered 
+                    the choice a bit longer. In the end, he didn't and ended up choosing blue.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
