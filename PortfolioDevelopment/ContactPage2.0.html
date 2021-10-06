@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <style>
+        .header{
+            /* sets background color */
+            background-color: brown;
+            /* adds padding */
+            padding: 20px;
+        
+            /* Centers text */
+            text-align: center;
+        }
+        .navbar{
+            /* sets background color of nav bar to grey */
+            background-color: grey;
+            /* hides over flow */
+            overflow: hidden;
+           
+        }
+        .navbar a{
+            /* sends all links to left of nav bar */
+            float: left;
+            /* center text inlink tabs */
+            text-align: center;
+            /* puts tabs into a block style display */
+            display: block;
+            /* removes underline from links */
+            text-decoration: none; 
+            /* sets words color to black */
+            color: black;
+            padding: 14px 20px;
+        }
+        .navbar a.right{
+            /* Sends tab to right of navbar */
+            float: right;
+            /* center text inlink tabs */
+            text-align: center;
+
+        }
+        .navbar a:hover{
+            background-color: ivory;
+            color: black;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+         /* Create two equal columns that sit side by side */
+        /* PictureSide that contains images of hobbbie */
+        .LeftSide{
+            /* take up left side of page */
+            flex: 50%;
+            
+            background-color: blanchedalmond;
+
+           
+        }
+        .RightSide{
+                /* take up right side of page */
+            flex: 50%;
+            
+            background-color: blanchedalmond;
+
+            
+        }
+        .image{
+            text-align: center;
+        
+            overflow: hidden;
+
+        }
+        .Text{
+            padding: 20px;
+        }
+        .footer{
+            padding: 20px;
+/* background color is blue */
+            background-color: brown;
+/* centers text */
+            text-align: center;
+        }
+
+    </style>
+    <body>
+        <div class=header>
+            <div>
+                <h1>Contact Page</h1> 
+            </div>
+            
+            
+        </div>
+
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Resume</a>
+            <a href="#">Projects</a>
+            <a href="#">Athletics</a>
+            <a href="C:\Programs\MasterGitHub\WebsiteDevelopmentGitHub\assignment-5-update-on-your-website-ccmarti1\PortfolioProjectCopy10-3-2021\PortfolioDevelopment\Hobbies2.0.html">Hobbies</a>
+            <a href="#">CommunityService</a>
+              
+            <a href="#" class="right">Contact</a>
+        
+            </div>
+
+            <div class="row">
+                <div class="LeftSide">
+                    <div class="image">
+                        <img src="C:\Programs\MasterGitHub\WebsiteDevelopmentGitHub\assignment-5-update-on-your-website-ccmarti1\PortfolioProjectCopy10-3-2021\PortfolioDevelopment\Images\Taverm.JPG" alt="Image">
+                    </div>
+                </div>
+                <div class="RightSide">
+                    <div class="Text">
+                    <h3>Contact Information</h3>
+                    <h4>Email: ccmarti1@student.uiwtx.edu</h4>
+                   </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+
+    </body>
+
+</html>
