@@ -1,7 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-<body>
+<head>
+    <title>Experience Page</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content="width=device-width, initial-scale=1">
+</head>
+<style>
+    .header{
+        background-color: blue;
+        color: black;
+        text-align: center;
+        padding: 40px;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .navbar{
+        /* hides over flow */
+        overflow: hidden;
+       /* stes background color to brown */
+        background-color: brown;
+        /* padding: 10px; */
+    }
+    .navbar a{ 
+        /* sends all links on navbar to left so it is horizontal and not verticle */
+        float: left;
+        /* displays tabs in navbar in a block format */
+        display: block;
+        /* sets color of text to black in the navbar */
+        color: black;
+        /* removes underlining for links in navbar and all other decoration atributes */
+        text-decoration: none;
+        /* centers text in each navbar tab */
+        text-align: center;
+        /* sets padding so there is space between word and border of tab */
+        padding: 14px 20px;
+    }
+    .navbar a:hover{
+        color: blanchedalmond;
+        background-color: black;
+    }
+    .navbar a.right{
+        float: right;
+    }
+    .row{
+        display: flex;
+        /* creates container for content */
+        flex-wrap: wrap;
+
+    }
+    .leftcolumn{
+         /* makes this ectino take up 40% of right side of the page */
+         flex: 40%;
+        /* centers text in columns */
+        text-align: center;
+        /* adds padding to text in centered more */
+        padding: 20px;
+    }
+    .rightcolumn{
+        /* makes this ectino take up 40% of left side of the page */
+        flex: 40%;
+        /* centers text in columns */
+        text-align: center;
+        /* adds padding to text in centered more */
+        padding: 20px;
+    }
+    .contentbox{
+        /* adds border to make content sections more defined */
+        border: solid black 2px;
+        /* margin is added to provide spacing between content boxes */
+        margin: 20px;
     
+    }
+    .contentbox h3{
+        /* underlines text */
+        text-decoration: underline;
+    }
+
+    .contentbox p{
+        padding: 10px 10px;
+    }
+    .footer{
+        background-color: blue;
+        color: black;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+</style>
+<body>
+
+    <div class='header'>
+        <div>
+            <h1>Experience Page</h1>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Resume</a>
+        <a href="#">Athletics</a>
+        <a href="#">Projects</a>
+        <a href="#">Hobbies</a>
+
+        <a  href="#" class='right'>Contact</a>
+
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="contentbox">
+                <h3>
+                    Career Experience
+                </h3>
+                <p>
+                    Puppies are soft, cute, funny, and make a big mess. Every month 
+                    or two our family fosters 6-12 week old puppies for a puppy rescue
+                    nonprofit organization. We all enjoy cuddling their furry bodies 
+                    after a clean bath. Fresh puppy smell is great. The puppies play
+                    with each other and our adult dog. They look so funny when they 
+                    lay on top of each other and sleep. While puppies can be great 
+                    fun, they also can make big messes. 4-6 puppies can make a lot 
+                    of puppy pee and poop. It's a challenge to keep the puppies and
+                    the puppy pen clean.
+                </p>
+            </div>
+
+            <div class="contentbox">
+                <h3>
+                    Organization Associations
+                </h3>
+                <p>
+                    Puppies are soft, cute, funny, and make a big mess. Every month 
+                    or two our family fosters 6-12 week old puppies for a puppy rescue
+                    nonprofit organization. We all enjoy cuddling their furry bodies 
+                    after a clean bath. Fresh puppy smell is great. The puppies play
+                    with each other and our adult dog. They look so funny when they 
+                    lay on top of each other and sleep. While puppies can be great 
+                    fun, they also can make big messes. 4-6 puppies can make a lot 
+                    of puppy pee and poop. It's a challenge to keep the puppies and
+                    the puppy pen clean.
+                </p>
+            </div>
+
+            <div class="contentbox">
+                <h3>
+                    Other Skills:
+                </h3>
+                <p>
+                    Puppies are soft, cute, funny, and make a big mess. Every month 
+                    or two our family fosters 6-12 week old puppies for a puppy rescue
+                    nonprofit organization. We all enjoy cuddling their furry bodies 
+                    after a clean bath. Fresh puppy smell is great. The puppies play
+                    with each other and our adult dog. They look so funny when they 
+                    lay on top of each other and sleep. While puppies can be great 
+                    fun, they also can make big messes. 4-6 puppies can make a lot 
+                    of puppy pee and poop. It's a challenge to keep the puppies and
+                    the puppy pen clean.
+                </p>
+            </div>
+
+        </div>
+        <div class="rightcolumn">
+            <div class="contentbox">
+                <h3>
+                    Certifications
+                </h3>
+                <p>
+                    None
+                </p>
+            </div>
+
+            <div class="contentbox">
+                <h3>
+                    Programming Languages
+                </h3>
+                <p>
+                    None
+                </p>
+            </div>
+
+            <div class="contentbox">
+                <h3>
+                    Langauges
+                </h3>
+                <p>
+                    None
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div>
+            <h1>Footer</h1>
+        </div>
+
+    </div>
+
 </body>
+</html>
