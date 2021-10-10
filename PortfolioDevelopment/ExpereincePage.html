@@ -8,15 +8,34 @@
 </head>
 <style>
     .background{
+        
         background-color: burlywood;
+    /* background-image: url(PictureOgGang.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
     }
     .header{
-         /* sets background color */
+         
+            /* sets background color */
          background-color: brown;
-            /* sets color of text to black */
-            color: black;
+            
+       
         text-align: center;
         padding: 40px;
+    }
+    .header.box{
+        text-align: center;
+    }
+    .image{
+
+ /* background-image: url('PictureOfGang.jpeg'); */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    }
+    .HeaderText{
+        
     }
     .header h1{
         font-size: 30px;
@@ -65,7 +84,7 @@
     }
     .rightcolumn{
         /* makes this ectino take up 40% of left side of the page */
-        flex: 40%;
+        flex:20%;
         /* centers text in columns */
         text-align: center;
         /* adds padding to text in centered more */
@@ -78,14 +97,36 @@
         margin: 20px;
     
     }
-    .contentbox h3{
+    .contentbox h2{
+        /* changes font size of text so that it is bigger */
+        font-size: 30px;
         /* underlines text */
         text-decoration: underline;
+        /* give space between paragraph and title */
+        padding: 10px 10px;
     }
 
     .contentbox p{
-        padding: 10px 10px;
+        /* pushes text to left of box */
+        text-align: left;
+        /* give space between text in paragraphs */
+        padding: 3px ;
+
+
     }
+    .contentbox h4{
+        /* pushes text to left of box */
+        text-align: left;
+        /* changes font size of text so that it is bigger */
+        font-size: 20px;
+    }
+/* style for text in right side of the page */
+    .contentbox h4.RightSectionText{
+        /* pushes text to left of box */
+        text-align: center;
+    }
+    
+
     .footer{
         color: black;
             padding: 20px;
@@ -94,20 +135,34 @@
 /* centers text */
             text-align: center;
         }
+        .contentbox p.secondbulletpoint{
+            text-align: right;
+        }
 
+        .contentbox h4.Underline{
+        /* underlines text*/
+        text-decoration: underline;
+    }
 
 </style>
 <body>
+<div class='header'>
+    
+        <div class="image">
+                <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\PictureOfGang.jpeg" alt="Me" width="200px" height="200px">
+        </div>
+        <div class="HeaderText">
+                <h1>Experience Page</h1>
+        </div>
+</div>
+    
+
 <div class="background">
 
-    <div class='header'>
-        <div>
-            <h1>Experience Page</h1>
-        </div>
-    </div>
+    
 
     <div class="navbar">
-        <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\ExpereincePage.html">Experience</a>
+            <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\ExpereincePage.html">Experience</a>
             <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\ProjectsPage.html">Projects</a>
             <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Community.html">Community Service</a>
             <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Hobbies2.0.html">Hobbies</a>
@@ -119,85 +174,89 @@
     <div class="row">
         <div class="leftcolumn">
             <div class="contentbox">
-                <h3>
+                <h2>
                     Career Experience
-                </h3>
-                <p>
-                    Puppies are soft, cute, funny, and make a big mess. Every month 
-                    or two our family fosters 6-12 week old puppies for a puppy rescue
-                    nonprofit organization. We all enjoy cuddling their furry bodies 
-                    after a clean bath. Fresh puppy smell is great. The puppies play
-                    with each other and our adult dog. They look so funny when they 
-                    lay on top of each other and sleep. While puppies can be great 
-                    fun, they also can make big messes. 4-6 puppies can make a lot 
-                    of puppy pee and poop. It's a challenge to keep the puppies and
-                    the puppy pen clean.
-                </p>
+                </h2>
+                <div class="text">
+                    <h4>TMI, San Antonio, Texas - (June-August 2021)</h4>
+                    <h4 class="Underline"> Maintenance Support</h4>
+                    <p>●	Coordinate with maintenance team and teachers to analyze ticket requests</p>
+                    <p>●	Execute facility repairs to address ticket request</p>
+                    <p>●	Resulting in a safer and improved learning environment for children and faculty</p> 
+                    
+                    <h4>College Board, San Antonio, Texas - (April-May 2019)</h4>
+                    <h4 class="Underline">AP Computer Science Exam Project(Java)</h4>
+                    <p>
+                        ●	Developed a program to analyze user input of a selected element from the periodic table
+                    </p>  
+                    <p>●	Utilize user input to synthesis information for an output</p> 
+                    <p>●	Display characteristics of selected element</p>
+                    
+                </div>
             </div>
 
             <div class="contentbox">
-                <h3>
+                <h2>
                     Organization Associations
-                </h3>
-                <p>
-                    Puppies are soft, cute, funny, and make a big mess. Every month 
-                    or two our family fosters 6-12 week old puppies for a puppy rescue
-                    nonprofit organization. We all enjoy cuddling their furry bodies 
-                    after a clean bath. Fresh puppy smell is great. The puppies play
-                    with each other and our adult dog. They look so funny when they 
-                    lay on top of each other and sleep. While puppies can be great 
-                    fun, they also can make big messes. 4-6 puppies can make a lot 
-                    of puppy pee and poop. It's a challenge to keep the puppies and
-                    the puppy pen clean.
-                </p>
+                </h2>
+                <h4 class="Underline">Student organizations/leadership activities - positions held</h4> 
+                <p>●	Crypto Cardinals-Secretary</p>
+                <p>●	Student Athletic Advisory Committee (SAAC)-member</p>
+                <p>●	Grow Program (Leadership Development)-member</p>   
+                <p class="secondbulletpoint">o	Create and lead initiatives to support homeless community in San Antonio</p> 
+                    
+                <h4 class="Underline">Professional memberships</h4>
+                    <p>   ●	National Society of Leadership and Success (NSLS)-member</p> 
+                    <p>   ●	National Society of Collegiate Scholars (NSCS)-member</p> 
+
+                
             </div>
 
-            <div class="contentbox">
-                <h3>
-                    Other Skills:
-                </h3>
-                <p>
-                    Puppies are soft, cute, funny, and make a big mess. Every month 
-                    or two our family fosters 6-12 week old puppies for a puppy rescue
-                    nonprofit organization. We all enjoy cuddling their furry bodies 
-                    after a clean bath. Fresh puppy smell is great. The puppies play
-                    with each other and our adult dog. They look so funny when they 
-                    lay on top of each other and sleep. While puppies can be great 
-                    fun, they also can make big messes. 4-6 puppies can make a lot 
-                    of puppy pee and poop. It's a challenge to keep the puppies and
-                    the puppy pen clean.
-                </p>
-            </div>
+            
 
         </div>
         <div class="rightcolumn">
             <div class="contentbox">
-                <h3>
+                <h2>
                     Certifications
-                </h3>
-                <p>
-                    None
-                </p>
+                </h2>
+
+                <h4 class="RightSectionText">    None</h4> 
+
             </div>
 
             <div class="contentbox">
-                <h3>
+                <h2>
                     Programming Languages
-                </h3>
-                <p>
-                    None
-                </p>
+                </h2>
+                
+                <h4 class="RightSectionText">    Python</h4> 
+                <h4 class="RightSectionText">   Java Script</h4>
+                <h4 class="RightSectionText">    HTML</h4>
+                <h4 class="RightSectionText">    C#</h4> 
             </div>
 
             <div class="contentbox">
-                <h3>
+                <h2>
                     Langauges
-                </h3>
-                <p>
-                    None
-                </p>
+                </h2>
+                
+                <h4 class="RightSectionText">    -English</h4> 
+                <h4 class="RightSectionText">    -French</h4>
+                <h4 class="RightSectionText">    -Japanese</h4>
+                <h4 class="RightSectionText">    -Manderin</h4> 
+                
             </div>
 
+            <div class="contentbox">
+                            <h2>
+                                Other Skills:
+                            </h2>
+
+                            <h4 class="RightSectionText">Drone Flying</h4> 
+                            <h4 class="RightSectionText">Forex Exchange Market Analysation</h4> 
+                    
+                        </div>
         </div>
 
     </div>
