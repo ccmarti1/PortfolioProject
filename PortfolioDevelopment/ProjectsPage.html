@@ -58,12 +58,16 @@
 
         .leftside{
          /* makes this ectino take up 40% of right side of the page */
-         flex: 60%;
+          flex: 60%; 
         /* centers text in columns */
         text-align: center;
         /* adds padding to text in centered more */
         padding: 20px;
+
+        /* width: 1000px; */
         }
+
+        /* Right Side was removed to maintain structure in page */
 
         .rightside{
             /* makes this ectino take up 40% of left side of the page */
@@ -72,11 +76,15 @@
             text-align: center;
             /* adds padding to text in centered more */
             padding: 20px;
+
+            background-color: black;
         }
+
         .box{
             padding: 20px;
             margin: 5px;
-            border: solid black 5px;
+            border: solid blue 5px;
+            background-color: grey;
         }
         .box a{
             font-size: 40px;
@@ -86,20 +94,34 @@
         }
         .topcolumn{
             text-align: center;
-            margin: 10px;
+            margin: 10px 10px 10px 10px;
             padding: 5px;
             border: solid black 5px;
+            /* sets background color of top collom to black */
+            background-color: black;
         }
         .bottomcolumn{
             text-align: center;
             margin: 10px;
             padding: 5px;
+            /* sets border to black */
             border: solid black 5px;
-
+            /* sets background color of bottom collom to black */
+            background-color: black;
         }
+        /* .Weblinks{ */
+            /* text-align: center;
+            margin: 10px 10px 10px 10px;
+            padding: 5px;
+            border: solid black 5px; */
+            /* sets background color of top collom to black */
+            /* background-color: black; */
+        /* } */
         .Text{
             padding: 20px;
             border: solid black 5px;
+            /* sets background color to white */
+            background-color: grey;
         }
         .Text h1{
             text-decoration: underline;
@@ -113,6 +135,7 @@
         video{
             margin: 10px;
             padding:10px;
+            
         }
         .footer{
             padding: 20px;
@@ -120,6 +143,9 @@
             background-color: brown;
 /* centers text */
             text-align: center;
+        }
+        .footer h1{
+            font: 40px;
         }
     </style>
 
@@ -142,7 +168,7 @@
             <div class="leftside">
                 <div class="topcolumn">
                     <div class="video">
-                       <iframe width="560" height="315" src="https://www.youtube.com/embed/h-d4wXYJNCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       <iframe width="800px" height="315" src="https://www.youtube.com/embed/h-d4wXYJNCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                     </div>
                     <div class="Text">
@@ -169,21 +195,22 @@
                     </div>
                 </div>
 
+                 
             </div>
-
-            <div class="rightside">
-                <div class="box">
-                    <a href="#">All Website</a>
+                <div class="rightside">
+                    <div class="box">
+                        <a href="#">All Website</a>
+                    </div>
+                    <div class="box">
+                        <a href="#">All Programs</a>
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="#">All Programs</a>
-                </div>
-            </div>
+            
 
         </div>
 
         <div class="footer">
-            <h3>Footer</h3>
+            <h1>Candan's Portfolio Project</h1>
         </div>
     </div>
     </body>
