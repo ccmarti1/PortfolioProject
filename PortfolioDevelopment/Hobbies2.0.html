@@ -15,6 +15,8 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .header{
+            /* groups contents */
+            /* display: flex;  Removed due to insufficiant time to find solution to image placement issue*/
             /* padding */
             padding: 40px; 
             /* Centers the text */
@@ -27,6 +29,18 @@
         .header h1{
             font-size: 40px;
         }
+        /* style type is not used due to removal of header image */
+        .headerimage{
+             border-radius: 50%;
+             width: 90px;
+             height: 90px;
+             border: 4px solid black;
+             
+        }
+
+
+            
+        
         .navbar{
             /* hides overflow */
             overflow: hidden; 
@@ -70,9 +84,9 @@
         /* Create two equal columns that sit side by side */
         /* PictureSide that contains images of hobbbie */
         .LeftSide{
-            flex: 50%;
+            flex: 40%;
             /* Sets width of left side to 5o % */
-            background-color:white;
+            /* background-color:white;  Removed code because it nullified body background color*/
             /* White background color is set */
             padding: 20px;
             /* padding to give space in between borders of picture side */ 
@@ -80,8 +94,8 @@
         .RightSide{
             flex: 50%;
             /* Sets width of right side to 5o % */
-            background-color:white;
-            /* White background color is set */
+            /* background-color:white; Removed code because it nullified body background color
+            White background color is set */
             padding: 20px;
             /* padding to give space in between borders of description side */ 
         }
@@ -91,22 +105,75 @@
         .RightSide p{
             font-size: 30px;
         }
+        .RightSide p.PGame{
+            font-size: 20px;
+        }
+        .RightSide p.Pstory{
+            font-size: 30px;
+            margin: 3px;
+        }
+        
+        .RightSide p.Pjourney{
+            font-size: 30px;
+            margin: 10px;
+        }
+        .RightSide h5{
+            text-decoration: underline;
+            margin: 20px 0px 0px 0px;
+        }
         Image{
             padding: 20px;
+            
+            border: solid black 5px;
         }
         .Description{
-            padding: 30px 30px;
+            padding: 30px 20px;
+            border: solid black 5px;
+            margin: 5px 0px;
+            height: 436.88px;
+            background-color: grey;
         }
+        .DescriptionGame{
+            padding: 30px 20px;
+            border: solid black 5px;
+            margin: 5px 0px;
+            height: 529.88px;
+            background-color: grey;
+        }
+        .DescriptionArt{
+            padding: 30px 20px;
+            border: solid black 5px;
+            margin: 5px 0px;
+            height:727.88;
+            background-color: grey;
+
+        
+        }
+        
         .Picture{
             padding: 20px 30px;
+            border: solid black 5px;
+            margin: 5px 0px;
+            width:520px;
+            background-color: grey;
 
         }
         .footer{
+            font: 40px;
             padding: 20px;
 /* background color is blue */
             background-color: brown;
 /* centers text */
             text-align: center;
+        }
+        .footer h1{
+            font: 40px;
+        }
+        .divider{
+            columns: 3;
+            column-gap: 10px;
+            column-rule-style: solid ;
+            column-rule-color: black;
         }
 
 
@@ -116,37 +183,44 @@
     <div class="background">
     <!-- header of page -->
         <div class="header">
-            <h1>Portfolio-Hobbies</h1>
+            
+            <!-- <img class="headerimage" src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\Kakashi.jfif" alt="Kakashi"> -->
+           <div class="HeaderText">
+            <h1>Hobbies Page</h1>
+            </div>
         </div>
     <!-- navigation bar -->
-        <div class="navbar">
-            <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\ExpereincePage.html">Experience</a>
-                <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\ProjectsPage.html">Projects</a>
-                <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Community.html">Community Service</a>
-                <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Hobbies2.0.html">Hobbies</a>
-        
-                <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\ContactPage2.0.html" class='right'>Contact</a>
-        </div>
+    
+    <div class="navbar">
+        <a href="ExpereincePage.html">Experience</a>
+        <a href="ProjectsPage.html">Projects</a>
+        <a href="Community.html">Community Service</a>
+        <a href="Hobbies2.0.html">Hobbies</a>
+
+        <a href="ContactPage2.0.html" class='right'>Contact</a>
+    </div>
         <div class="row">
             <div class="LeftSide">
                 <div class="Picture">
                     <h1>Drones</h1>
                     <div class="Image">
-                        <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\Drone.jfif" alt="Drone">
+                        <!-- width of 460 is added so there is not a lot of empty space on right side of image -->
+                        <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\Drone.jfif" alt="Drone" >
                     </div>
                 </div>
 
                 <div class="Picture">
-                    <h1>Drones</h1>
+                    <h1>Programming Games</h1>
                     <div class="Image">
-                        <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\Drone.jfif" alt="Drone">
+                        <iframe src="https://scratch.mit.edu/projects/119330465/embed" allowtransparency="true" width="460" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                         <!-- width='460px' -->
                     </div>
                 </div>
 
                 <div class="Picture">
-                    <h1>Drones</h1>
+                    <h1>Piece Of Art</h1>
                     <div class="Image">
-                        <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\Drone.jfif" alt="Drone">
+                        <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\NarutoImage(Kakashi).jfif" width='460px' >
                     </div>
                 </div>
 
@@ -154,27 +228,41 @@
             </div>
             <div class="RightSide">
                 <div class="Description">
-                    <h2>Description:</h2>
-                    <p>The choice was red, green, or blue. It didn't seem like an important 
-                        choice when he was making it, but it was a choice nonetheless. Had he 
-                        known the consequences at that time, he would likely have considered 
-                        the choice a bit longer. In the end, he didn't and ended up choosing blue.
-                    </p>
+                    <h2>My Journey:</h2>
+                    <p class="Pjourney">I been flying drones since I was about 10years old</p>
+                    <p class="Pjourney">I started off with drones like the ETHOS QX130 ARES</p>
+                    <p class="Pjourney">And eventually moved to smaller drones</p>
+                    <p class="Pjourney">I am currently loooking into a FAA liscence for commercial use of drones</p>
+                    
 
                 </div>
 
-                <div class="Description">
-                    <h2>Description:</h2>
-                    <p>The choice was red, green, or blue. It didn't seem like an important 
-                        choice when he was making it, but it was a choice nonetheless. Had he 
-                        known the consequences at that time, he would likely have considered 
-                        the choice a bit longer. In the end, he didn't and ended up choosing blue.
-                    </p>
+                <div class="DescriptionGame">
+                    <h2>My Game:</h2>
+                    <p class="Pstory">This is one of the first games I've made and was one that really encourage me to continue Programming</p>
+                    <p class="Pstory">I made this program in 2016 when I was about 15 years old my 8th grade years</p>
+                    <p class="Pstory">I haven't been as active, however I plan to more activily develop other programs and upload them to github</p>
+                    
+
+                    
+                    <h5>Game Guide:</h5>
+                    <div class="divider">
+                    <p class="PGame">W=Up----S=Down</p>
+                    <p class="PGame">A=Left--D=Right</p>
+                    <p class="PGame">Right arrow = Right shield</p>
+                    <p class="PGame">Left arrow = Left shield</p>
+                    <p class="PGame">Don't touch the black line</p>
+                    </div>   
+                       
+                            
+                            
+                            
+                    
 
                 </div>
 
-                <div class="Description">
-                    <h2>Description:</h2>
+                <div class="DescriptionArt" >
+                    <h2>My Story:</h2>
                     <p>The choice was red, green, or blue. It didn't seem like an important 
                         choice when he was making it, but it was a choice nonetheless. Had he 
                         known the consequences at that time, he would likely have considered 
@@ -187,7 +275,7 @@
 
         </div>
         <div class="footer">
-            <h3>Footer</h3>
+            <h1>Candan's Portfolio Project</h1>
         </div>
     </div>
 </body>

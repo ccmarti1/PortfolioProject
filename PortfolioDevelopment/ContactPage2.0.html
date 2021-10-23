@@ -8,7 +8,7 @@
     </head>
     <style>
         .background{
-        background-color: burlywood;
+            background-color: burlywood;
     }
         .header{
             /* sets background color */
@@ -20,6 +20,9 @@
         
             /* Centers text */
             text-align: center;
+        }
+        .header h1{
+            font-size: 40px;
         }
         .navbar{
             /* sets background color of nav bar to grey */
@@ -62,15 +65,19 @@
             /* take up left side of page */
             flex: 50%;
             /* background-image: url('PictureOfGang.jpeg'); */
-            background-color: blanchedalmond;
-
+          
+            width: 600px;
            
         }
         .RightSide{
                 /* take up right side of page */
-            flex: 50%;
+            flex: 40%;
             
-            background-color: blanchedalmond;
+           border: solid black 5px;
+
+           margin: 10px;
+
+           background-color: gray;
 
             
         }
@@ -79,9 +86,28 @@
         
             overflow: hidden;
 
+            border: solid black 5px;
+
+            margin: 10px;
+
+            background-color: gray;
+
         }
         .Text{
             padding: 20px;
+
+            text-align:center;
+
+            
+
+            
+        }
+        .Text h3{
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        .Text h4{
+            font-size: 20px;
         }
         .footer{
             padding: 20px;
@@ -90,10 +116,12 @@
 /* centers text */
             text-align: center;
         }
+        .footer h1{
+            font: 40px;
+        }
 
     </style>
     <body>
-    <div class="background">
         <div class=header>
             <div>
                 <h1>Contact Page</h1> 
@@ -101,15 +129,16 @@
             
             
         </div>
+    <div class="background">
+        
 
         <div class="navbar">
-            <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\ExpereincePage.html">Experience</a>
-            <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\ProjectsPage.html">Projects</a>
-            <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Community.html">Community Service</a>
-            <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Hobbies2.0.html">Hobbies</a>
+            <a href="ExpereincePage.html">Experience</a>
+            <a href="ProjectsPage.html">Projects</a>
+            <a href="Community.html">Community Service</a>
+            <a href="Hobbies2.0.html">Hobbies</a>
     
-            <a href="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\ContactPage2.0.html" class='right'>Contact</a>
-            
+            <a href="ContactPage2.0.html" class='right'>Contact</a>
         </div>
 
             <div class="row">
@@ -127,7 +156,7 @@
 
             </div>
             <div class="footer">
-                <h2>Footer</h2>
+                <h1>Candan's Portfolio Project</h1>
             </div>
     </div>
     </body>
