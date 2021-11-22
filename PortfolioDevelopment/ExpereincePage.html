@@ -27,7 +27,16 @@
     .header.box{
         text-align: center;
     }
+    
+    .HeaderContainer
+    {
+        display: flex;
+    }
     .image{
+
+        flex:30%;
+        padding: 0px;
+        margin: 0px
 
  /* background-image: url('PictureOfGang.jpeg'); */
     /* background-repeat: no-repeat;
@@ -35,7 +44,7 @@
     background-size: cover; */
     }
     .HeaderText{
-        
+        flex: 60%;
     }
     .header h1{
         font-size: 40px;
@@ -152,13 +161,15 @@
 </style>
 <body>
 <div class='header'>
+    <div class="HeaderContainer">
     <!-- removed image due to lack of time to fix image positioning issue -->
-        <!-- <div class="image">
-                <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\PictureOfGang.jpeg" alt="Me" width="200px" height="200px">
-        </div> -->
+        <div class="image">
+                <img src="Images\Kakashi.jfif" alt="Me" width="150px" height="200px">
+        </div>
         <div class="HeaderText">
                 <h1>Experience Page</h1>
         </div>
+    </div>
 </div>
     
 
@@ -225,7 +236,7 @@
                     Certifications
                 </h2>
 
-                <h4 class="RightSectionText">    None</h4> 
+                <h4 class="RightSectionText">None</h4> 
 
             </div>
 
@@ -267,6 +278,8 @@
 
     <div class="footer">
         <div>
+            <a href="#"><img src="Images\Kakashi.jfif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+            
             <h1>Candan's Portfolio Project</h1>
         </div>
 

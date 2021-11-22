@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Calculator
+        </title>
+        <script src="Calculator.js" type="text/javascript" ></script>
+        <script src="style.css" type="text/css" ></script>
+    </head>
+    <body>
+        <!-- table is created -->
+        <table cellbadding = '5' cellspacing='5' width='800'>
+
+            <tr align ="center">
+                <!-- 3 columns are made displaying text -->
+                <td> Enter the first Number</td>
+                <td> Enter the Second Number</td>
+                <td> Result </td>
+            </tr>
+            <tr align ="center">
+                <td><input name="first number" type="text" size="12" id="num1"></td>
+                <td><input name='second number' type="text" size='12' id='num2'></td>
+                <td><input type="text" size='12' id="result" readonly></td>
+
+
+            </tr>
+            <td colspan = '3' align="center">
+<!-- plus sign is displayed to represent 1 -->
+                <button on click="calculate('1')">+</button>
+                <button on click="calculate('2')">-</button>
+                <button on click="calculate('3')">*</button>
+                <button on click="calculate('4')">/</button>
+                <button on click="calculate('5')">%</button>
+
+            </td>
+
+        </table>
+        
+    </body>
+</html>
