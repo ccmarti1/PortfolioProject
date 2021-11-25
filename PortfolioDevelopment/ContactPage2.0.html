@@ -7,6 +7,10 @@
 
     </head>
     <style>
+         .body{
+            border: solid black 5px;
+            margin: 0px;
+        }
         .background{
             background-color: burlywood;
     }
@@ -63,10 +67,17 @@
         /* PictureSide that contains images of hobbbie */
         .LeftSide{
             /* take up left side of page */
-            flex: 50%;
+            flex: 30%;
             /* background-image: url('PictureOfGang.jpeg'); */
           
-            width: 600px;
+            /* width: 600px; */
+
+            padding: 10px;
+            
+            margin: 20px;
+            
+
+
            
         }
         .RightSide{
@@ -75,9 +86,11 @@
             
            border: solid black 5px;
 
-           margin: 10px;
+           margin: 200px 10px;
 
-           background-color: gray;
+           padding: 20px 0px;
+
+           background-color: black;
 
             
         }
@@ -90,17 +103,30 @@
 
             margin: 10px;
 
-            background-color: gray;
+            background-color:black;
+
+            height: 540px;
+
+            /* This section makes image look like a circle picture frame */
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -o-border-radius: 50%;
+
 
         }
+        /* .ContactInfoBox{
+            background-color: black;
+
+            height: 500px;
+
+            margin: 40px 10px; /* Provides space between bozes
+
+        } */
         .Text{
             padding: 20px;
-
+            background-color: gray;
             text-align:center;
-
-            
-
-            
         }
         .Text h3{
             font-size: 30px;
@@ -119,9 +145,37 @@
         .footer h1{
             font: 40px;
         }
+        .navbarFooter {
+        /* hides over flow */
+        overflow: hidden;
+       
+        /* sets background color of nav bar to grey */
+        background-color:none;
+    }
+    .navbarFooter  a{ 
+        /* sends all links on navbar to left so it is horizontal and not verticle */
+        float: right;
+        /* displays tabs in navbar in a block format */
+        display: block;
+        /* sets color of text to black in the navbar */
+        color: black;
+        /* removes underlining for links in navbar and all other decoration atributes */
+        text-decoration: none;
+        /* centers text in each navbar tab */
+        text-align: center;
+        /* sets padding so there is space between word and border of tab */
+        padding: 10px 20px;
+    }
+    .navbarFooter a:hover{
+        color: blanchedalmond;
+        background-color: black;
+    }
+    .navbarFooter  a.right{
+        float: right;
+    }
 
     </style>
-    <body>
+  <body class="body">
         <div class=header>
             <div>
                 <h1>Contact Page</h1> 
@@ -144,19 +198,25 @@
             <div class="row">
                 <div class="LeftSide">
                     <div class="image">
-                        <img src="C:\Programs\MasterGitHub\WebsiteDevelopmentGitHub\assignment-5-update-on-your-website-ccmarti1\PortfolioProjectCopy10-3-2021\PortfolioDevelopment\Images\Taverm.JPG" alt="Image">
+                        <img src="Images\Kakashi.jfif" alt="Image" style="height: 550px;">
                     </div>
                 </div>
                 <div class="RightSide">
-                    <div class="Text">
-                    <h3>Contact Information</h3>
-                    <h4>Email: ccmarti1@student.uiwtx.edu</h4>
-                   </div>
+                    <!-- <div class="ContactInfoBox"> -->
+                        <div class="Text">
+                        <h3>Contact Information</h3>
+                        <h4>Email: ccmarti1@student.uiwtx.edu</h4>
+                        </div>
+                    <!-- </div> -->
                 </div>
 
             </div>
             <div class="footer">
-                <h1>Candan's Portfolio Project</h1>
+                <div class="navbarFooter">
+                    <h1 style="float: left;">Media:</h1>
+                    <a href="ContactPage2.0.html"><img src="Images\Kakashi.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+                    <a href="https://www.linkedin.com/feed/"><img src="Images\LinkedIn.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+                </div>
             </div>
     </div>
     </body>

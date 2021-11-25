@@ -7,6 +7,10 @@
     </head>
 
     <style>
+         .body{
+            border: solid black 5px;
+            margin: 0px;
+        }
         .background{
         background-color: burlywood;
     }
@@ -93,7 +97,7 @@ float: left;
         }
         .topcolumn{
             text-align: center;
-            margin: 10px 220px;
+            margin: 10px 180px;
             padding: 5px;
             border: solid black 5px;
             background-color: grey;
@@ -104,7 +108,7 @@ float: left;
         }
         .bottomcolumn{
             text-align: center;
-            margin: 10px 220px;
+            margin: 10px 180px;
             padding: 5px;
             border: solid black 5px;
 
@@ -121,9 +125,37 @@ float: left;
         .footer h1{
             font: 40px;
         }
+        .navbarFooter {
+        /* hides over flow */
+        overflow: hidden;
+       
+        /* sets background color of nav bar to grey */
+        background-color:none;
+    }
+    .navbarFooter  a{ 
+        /* sends all links on navbar to left so it is horizontal and not verticle */
+        float: right;
+        /* displays tabs in navbar in a block format */
+        display: block;
+        /* sets color of text to black in the navbar */
+        color: black;
+        /* removes underlining for links in navbar and all other decoration atributes */
+        text-decoration: none;
+        /* centers text in each navbar tab */
+        text-align: center;
+        /* sets padding so there is space between word and border of tab */
+        padding: 10px 20px;
+    }
+    .navbarFooter a:hover{
+        color: blanchedalmond;
+        background-color: black;
+    }
+    .navbarFooter  a.right{
+        float: right;
+    }
     </style>
 
-    <body>
+<body class="body">
     <div class="background">
         <div class="header">
             <h1>Community Service Page</h1>
@@ -144,7 +176,7 @@ float: left;
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/w8HdOHrc3OQ?controls=0&amp;start=140" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             <!-- Ronald Reigh Gon speech not workin -->
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GUQm7UqF-YA?controls=0&amp;start=122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <iframe width="660" height="415" src="https://www.youtube.com/embed/3V1HCcAw4R4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="860" height="515" src="https://www.youtube.com/embed/3V1HCcAw4R4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="bottomcolumn">
             <div class="row">
@@ -166,7 +198,11 @@ float: left;
         </div>
 </div>
         <div class="footer">
-            <h1>Candan's Portfolio Project</h1>
+            <div class="navbarFooter">
+                <h1 style="float: left;">Media:</h1>
+                <a href="ContactPage2.0.html"><img src="Images\Kakashi.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+                <a href="https://www.linkedin.com/feed/"><img src="Images\LinkedIn.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+            </div>
         </div>
     </div>
     </body>
