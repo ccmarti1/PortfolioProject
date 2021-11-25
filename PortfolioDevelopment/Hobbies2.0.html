@@ -7,6 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+         .body{
+            border: solid black 5px;
+            margin: 0px;
+        }
         .background{
         background-color: burlywood;
     }
@@ -175,11 +179,38 @@
             column-rule-style: solid ;
             column-rule-color: black;
         }
-
+        .navbarFooter {
+        /* hides over flow */
+        overflow: hidden;
+       
+        /* sets background color of nav bar to grey */
+        background-color:none;
+    }
+    .navbarFooter  a{ 
+        /* sends all links on navbar to left so it is horizontal and not verticle */
+        float: right;
+        /* displays tabs in navbar in a block format */
+        display: block;
+        /* sets color of text to black in the navbar */
+        color: black;
+        /* removes underlining for links in navbar and all other decoration atributes */
+        text-decoration: none;
+        /* centers text in each navbar tab */
+        text-align: center;
+        /* sets padding so there is space between word and border of tab */
+        padding: 10px 20px;
+    }
+    .navbarFooter a:hover{
+        color: blanchedalmond;
+        background-color: black;
+    }
+    .navbarFooter  a.right{
+        float: right;
+    }
 
     </style>
 </head>
-<body>
+<body class="body">
     <div class="background">
     <!-- header of page -->
         <div class="header">
@@ -220,7 +251,7 @@
                 <div class="Picture">
                     <h1>Piece Of Art</h1>
                     <div class="Image">
-                        <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\NarutoImage(Kakashi).jfif" width='460px' >
+                        <img src="C:\Programs\MasterGitHub\MyGitHub\PortfolioProject\PortfolioDevelopment\Images\NarutoImage(Kakashi).jfif" width='460px' height="400px" >
                     </div>
                 </div>
 
@@ -261,7 +292,7 @@
 
                 </div>
 
-                <div class="DescriptionArt" >
+                <div class="DescriptionArt" style="height: 546px;">
                     <h2>My Story:</h2>
                     <p>The choice was red, green, or blue. It didn't seem like an important 
                         choice when he was making it, but it was a choice nonetheless. Had he 
@@ -275,7 +306,11 @@
 
         </div>
         <div class="footer">
-            <h1>Candan's Portfolio Project</h1>
+            <div class="navbarFooter">
+                <h1 style="float: left;">Media:</h1>
+                <a href="ContactPage2.0.html"><img src="Images\Kakashi.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+                <a href="https://www.linkedin.com/feed/"><img src="Images\LinkedIn.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+            </div>
         </div>
     </div>
 </body>

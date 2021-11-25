@@ -7,9 +7,14 @@
     </head>
 
     <style>
+        /* Body was added to ADDed a black bourder to page  */
+         .body{ 
+            border: solid black 5px;
+            margin: 0px;
+        }
         .background{
         background-color: burlywood;
-    }
+        }
         .header{
           /* sets background color */
           background-color: brown;
@@ -111,6 +116,8 @@
             border: solid black 5px;
             /* sets background color of bottom collom to black */
             background-color: black;
+             
+            overflow:hidden;
         }
         /* .Weblinks{ */
             /* text-align: center;
@@ -151,13 +158,41 @@
         .footer h1{
             font: 40px;
         }
-        #iframe
+        /* #iframe
         {
             
-        }
+        } */
+        .navbarFooter {
+        /* hides over flow */
+        overflow: hidden;
+       
+        /* sets background color of nav bar to grey */
+        background-color:none;
+    }
+    .navbarFooter  a{ 
+        /* sends all links on navbar to left so it is horizontal and not verticle */
+        float: right;
+        /* displays tabs in navbar in a block format */
+        display: block;
+        /* sets color of text to black in the navbar */
+        color: black;
+        /* removes underlining for links in navbar and all other decoration atributes */
+        text-decoration: none;
+        /* centers text in each navbar tab */
+        text-align: center;
+        /* sets padding so there is space between word and border of tab */
+        padding: 10px 20px;
+    }
+    .navbarFooter a:hover{
+        color: blanchedalmond;
+        background-color: black;
+    }
+    .navbarFooter  a.right{
+        float: right;
+    }
     </style>
 
-    <body>
+    <body class="body">
     <div class="background">
         <div class="header">
             <h1>Projects Page</h1>
@@ -176,7 +211,7 @@
             <div class="leftside">
                 <div class="topcolumn">
                     <div class="video">
-                       <iframe width="800px" height="315" src="https://www.youtube.com/embed/h-d4wXYJNCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="800" height="415" src="https://www.youtube.com/embed/h6LfuN0hoIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                     </div>
                     <div class="Text">
@@ -191,7 +226,7 @@
 
                 <div class="bottomcolumn">
                     <div class="video">
-                        <iframe width="700" height="315" src="Drumkit\HTML.html" title="Drumkit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="700" height="415" src="Drumkit\HTML.html" title="Drumkit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="Text">
                         <h1>
@@ -205,7 +240,7 @@
 
                 <div class="bottomcolumn">
                     <div class="video">
-                        <iframe width="700" height="450" src="Calulator\Third\HTML.html" title="Calculator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="700" height="480" src="Calulator\Third\HTML.html" title="Calculator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="Text">
                         <h1>
@@ -219,7 +254,7 @@
 
                 <div class="bottomcolumn">
                     <div class="video">
-                        <iframe width="700" height="450" src="Hangman-Portfolio\index.html" title="Hang-Man" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="700" height="500" src="Hangman-Portfolio\index.html" title="Hang-Man" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="Text">
                         <h1>
@@ -247,9 +282,14 @@
             
         </div>
 
-        <div class="footer">
-            <h1>Candan's Portfolio Project</h1>
-        </div>
+        
     </div>
+    <div class="footer">
+            <div class="navbarFooter">
+                <h1 style="float: left;">Media:</h1>
+                <a href="ContactPage2.0.html"><img src="Images\Kakashi.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+                <a href="https://www.linkedin.com/feed/"><img src="Images\LinkedIn.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+            </div>
+        </div>
     </body>
 </html>

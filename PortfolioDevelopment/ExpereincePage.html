@@ -7,9 +7,14 @@
     <meta name='viewport' content="width=device-width, initial-scale=1">
 </head>
 <style>
+     .body{
+            border: solid black 5px;
+            margin: 0px;
+        }
     .background{
         
-        background-color: burlywood;
+        background-color: burlywood; /*initial background color
+        background-color: black; */
     /* background-image: url(PictureOgGang.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,8 +23,8 @@
     .header{
          
             /* sets background color */
-         background-color: brown;
-            
+         background-color: brown; /* Initial Color*/
+         /* background-color: #191970;  */
        
         text-align: center;
         padding: 40px;
@@ -34,9 +39,14 @@
     }
     .image{
 
-        flex:30%;
+        /* flex:30%; */
+        float: left;
         padding: 0px;
-        margin: 0px
+        margin: 0px;
+        /* border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -o-border-radius: 50%; */
 
  /* background-image: url('PictureOfGang.jpeg'); */
     /* background-repeat: no-repeat;
@@ -75,6 +85,34 @@
         background-color: black;
     }
     .navbar a.right{
+        float: right;
+    }
+    .navbarFooter {
+        /* hides over flow */
+        overflow: hidden;
+       
+        /* sets background color of nav bar to grey */
+        background-color:none;
+    }
+    .navbarFooter  a{ 
+        /* sends all links on navbar to left so it is horizontal and not verticle */
+        float: right;
+        /* displays tabs in navbar in a block format */
+        display: block;
+        /* sets color of text to black in the navbar */
+        color: black;
+        /* removes underlining for links in navbar and all other decoration atributes */
+        text-decoration: none;
+        /* centers text in each navbar tab */
+        text-align: center;
+        /* sets padding so there is space between word and border of tab */
+        padding: 10px 20px;
+    }
+    .navbarFooter a:hover{
+        color: blanchedalmond;
+        background-color: black;
+    }
+    .navbarFooter  a.right{
         float: right;
     }
     .row{
@@ -140,7 +178,7 @@
 
     .footer{
         color: black;
-            padding: 20px;
+            padding: 10px 20px;
 /* background color is blue */
             background-color: brown;
 /* centers text */
@@ -159,13 +197,13 @@
         }
 
 </style>
-<body>
+<body class="body">
 <div class='header'>
     <div class="HeaderContainer">
     <!-- removed image due to lack of time to fix image positioning issue -->
-        <div class="image">
+        <!-- <div class="image">
                 <img src="Images\Kakashi.jfif" alt="Me" width="150px" height="200px">
-        </div>
+        </div> -->
         <div class="HeaderText">
                 <h1>Experience Page</h1>
         </div>
@@ -277,11 +315,20 @@
     </div>
 
     <div class="footer">
-        <div>
-            <a href="#"><img src="Images\Kakashi.jfif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+        <div class="navbarFooter">
+            <h1 style="float: left;">Media:</h1>
+            <a href="ContactPage2.0.html"><img src="Images\Kakashi.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="Images\LinkedIn.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+        </div>
+
+
+
+        <!-- <div>
+            
+            <a href="#"><img src="Images\Kakashi.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
             
             <h1>Candan's Portfolio Project</h1>
-        </div>
+        </div> -->
 
     </div>
 </div>

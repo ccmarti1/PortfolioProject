@@ -7,8 +7,13 @@
     </head>
 
     <style>
+        .body{
+            border: solid black 5px;
+            margin: 0px;
+        }
         .background{
-        background-color: burlywood;
+        background-color: burlywood; /*INitial color
+        background-color: black; */
     }
         .header{
           /* sets background color */
@@ -57,6 +62,7 @@
         .row{
             display: flex;
             flex-wrap: wrap;
+            margin: 0px 100px; /*This was ADDEDvideos and content to center of page to row to push */
         }
 
         .leftside{
@@ -150,9 +156,37 @@
         .footer h1{
             font: 40px;
         }
+        .navbarFooter {
+        /* hides over flow */
+        overflow: hidden;
+       
+        /* sets background color of nav bar to grey */
+        background-color:none;
+    }
+    .navbarFooter  a{ 
+        /* sends all links on navbar to left so it is horizontal and not verticle */
+        float: right;
+        /* displays tabs in navbar in a block format */
+        display: block;
+        /* sets color of text to black in the navbar */
+        color: black;
+        /* removes underlining for links in navbar and all other decoration atributes */
+        text-decoration: none;
+        /* centers text in each navbar tab */
+        text-align: center;
+        /* sets padding so there is space between word and border of tab */
+        padding: 10px 20px;
+    }
+    .navbarFooter a:hover{
+        color: blanchedalmond;
+        background-color: black;
+    }
+    .navbarFooter  a.right{
+        float: right;
+    }
     </style>
 
-    <body>
+    <body class="body">
     <div class="background">
         <div class="header">
             <h1>Projects Page</h1>
@@ -170,8 +204,24 @@
         <div class="row">
             <div class="leftside">
                 <div class="topcolumn">
-                    <div class="video">
-                       <iframe width="800px" height="315" src="https://www.youtube.com/embed/h-d4wXYJNCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <div class="video">
+                        <iframe width="800" height="415" src="https://www.youtube.com/embed/h6LfuN0hoIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <iframe width="560" height="415" src="https://www.youtube.com/embed/ISTZLu-a684?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    </div>
+                    <div class="Text">
+                        <h1>
+                            Description:
+                        </h1>
+                        <p>
+                            These are some of the programs I have created so far
+                        </p>
+                    </div>
+                <div class="box" style="padding: 10px;">
+                    <a href="AllProjectsPage.html"><img src="Images\AllProjectsImage.png" alt="All Projects" width="760" height="140px"></a>
+                </div>
+                <div class="bottomcolumn">
+                   <div class="video">
+                       <iframe width="800px" height="415" src="https://www.youtube.com/embed/h-d4wXYJNCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                     </div>
                     <div class="Text">
@@ -183,37 +233,24 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="bottomcolumn">
-                    <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ISTZLu-a684?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="Text">
-                        <h1>
-                            Description:
-                        </h1>
-                        <p>
-                            These are some of the programs I have created so far
-                        </p>
-                    </div>
                 </div>
-
+                <!--This righsite was initially on the outside of this div block, which was a side bar-->
                  
             </div>
-                <div class="rightside">
-                    <div class="box">
-                        <a href="#">All Website</a>
-                    </div>
-                    <div class="box">
-                        <a href="AllProjectsPage.html">All Programs</a>
-                    </div>
-                </div>
-            
-
+                
+        
         </div>
-
+<!-- <div class="rightside">
+                    <div class="box">
+                        <a href="AllProjectsPage.html"><img src="Images\AllProjectsImage.png" alt="All Projects" style="width: 100px; height: 300px;"></a>
+                    </div>
+                </div> -->
         <div class="footer">
-            <h1>Candan's Portfolio Project</h1>
+            <div class="navbarFooter">
+                <h1 style="float: left;">Media:</h1>
+                <a href="ContactPage2.0.html"><img src="Images\Kakashi.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+                <a href="https://www.linkedin.com/feed/"><img src="Images\LinkedIn.jfif" alt="HTML tutorial" style="width:52px;height:52px;"></a>
+            </div>
         </div>
     </div>
     </body>
